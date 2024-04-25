@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: #fff;
+}
+  
+/* MENU */ 
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+  
+a:hover {
+  /* opacity: 0.7; */
+ /* color: #0099ff;*/
+ color: #adadad;
+}
+  
+  
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+  
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(56, 56, 56);
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #0a0a0a;
+  height: 8vh;
+}
+  
+body {
+  background-color: rgb(39, 42, 74);
+}
+  
+.nav-list {
+  list-style: none;
+  display: flex; 
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px; 
+} 
+
+/* menu dropdown */
+
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  
+}
+
+.nav-menu li {
+  margin-right: 20px;
+  
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+  
+}
+
+.dropdown-menu {
+  display: none;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(56, 56, 56);
+  position: absolute;
+  background-color: rgb(29,29,29, 0.3);
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* mexer diretamente com os itens do menu dropdown */
+.dropdown-menu li {
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: Style links */
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-menu a:hover {
+  color: #007bff;
+  background-color: #000000;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* dropdown itens */
+
+.logout {
+  border-radius: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.logout:hover {
+  background-color: #adadad;
+}
+
+.linha1 {
+  border-top: 1px solid rgb(146, 146, 146);
+}
+
+/* theme styles */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 15px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.tema-escuro {
+  background-color: #333;
+  color: #fff;
+}
