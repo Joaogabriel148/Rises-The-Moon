@@ -18,8 +18,23 @@ const Barranavigate = () => {
       <nav>
       <h2 color='white'><a href='/'>Rises the Moon 🌙</a></h2>
         <ul class='nav-list'>
-          <li><Link to="/">-------</Link></li>
-          <li><Link to="/">-------</Link></li>
+
+          <li className="dropdown"><Link to="/">-------</Link>
+          <ul className="dropdown-menu">
+                <li><a href="/services/service1">Service 1</a></li>
+                <li><a href="/services/service2">Service 2</a></li>
+                <li><a href="/services/service3">Service 3</a></li>
+              </ul>
+          
+          </li>
+          <li className="dropdown"><Link to="/">-------</Link>
+          <ul className="dropdown-menu">
+                <li><a href="/services/service1">Service 1</a></li>
+                <li><a href="/services/service2">Service 2</a></li>
+                <li><a href="/services/service3">Service 3</a></li>
+              </ul>
+          
+          </li>
 
           
           <li className="dropdown"><Link to="/">Services</Link>
